@@ -30,10 +30,18 @@ body {
 
 @media screen and (max-width:760px) {
 	.header {
-		height:300px:
+		height: 300px;
 	}
 	.header a {
 		display: none;
+	}
+	.header p {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 32pt;
 	}
 }
 
@@ -61,13 +69,16 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
-@media screen (max-width: 760px) {
+
+
+@media screen and (max-width:760px) {
+	.main-menu {
+		padding: 0;
+	}
 	.main-menu li {
 		display: block;
 		text-align: center;
-	}
-	.main-menu {
-		padding : 0;
+		width: 100%;
 	}
 }
 
